@@ -70,12 +70,14 @@ st.markdown("""
         border: 1px solid #00c6ff !important;
     }
     .summary-expander {
-        background-color: #e3f2fd;
-        padding: 15px;
-        border-left: 4px solid #00c6ff;
-        border-radius: 10px;
-        margin-bottom: 10px;
-    }
+    background-color: rgba(255, 255, 255, 0.05);  /* subtle light overlay */
+    color: #f1f1f1;  /* light text for dark backgrounds */
+    padding: 15px;
+    border-left: 4px solid #00c6ff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
     .footer {
         text-align: center;
         color: #888;
