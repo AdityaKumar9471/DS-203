@@ -69,21 +69,24 @@ st.markdown("""
     .input-area textarea {
         border: 1px solid #00c6ff !important;
     }
-    .summary-expander {
-    background-color: #ffffff10;  /* translucent white background for subtle highlight */
-    color: #111111;               /* dark text */
+ <style>
+.summary-expander {
+    background-color: #f0f0f0; /* Light grey background */
+    color: #000000;            /* Black text */
     padding: 15px;
     border-left: 4px solid #00c6ff;
     border-radius: 10px;
     margin-bottom: 10px;
+    font-weight: 500;
 }
-
 @media (prefers-color-scheme: dark) {
     .summary-expander {
-        background-color: #1e1e1e;
-        color: #f1f1f1;
+        background-color: #2c2c2c; /* Dark grey background */
+        color: #ffffff;            /* White text */
     }
 }
+</style>
+
 
     .footer {
         text-align: center;
