@@ -42,37 +42,45 @@ st.set_page_config(page_title="📘 Session Summary Explorer", layout="centered"
 
 # --- Custom CSS ---
 st.markdown("""
-    <style>
-    .app-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding-top: 80px;
-    }
-    .title {
-        font-size: 50px;
-        font-weight: bold;
-        text-align: center;
-        background: -webkit-linear-gradient(90deg, #0072ff, #00c6ff);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .subtitle {
-        font-size: 18px;
-        text-align: center;
-        color: #555;
-        margin-bottom: 30px;
-    }
-    .input-area textarea {
-        border: 1px solid #00c6ff !important;
-    }
- <style>
+<style>
+/* App Container Styling */
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+/* Title Styling */
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    background: -webkit-linear-gradient(90deg, #0072ff, #00c6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Subtitle Styling */
+.subtitle {
+    font-size: 18px;
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Input TextArea Styling */
+.input-area textarea {
+    border: 1px solid #00c6ff !important;
+}
+
+/* Summary Box Styling - light and dark theme compatible */
 .summary-expander {
-    background-color: #f0f0f0; /* Light grey background */
-    color: #000000;            /* Black text */
+    background-color: #f0f0f0; /* Light mode background */
+    color: #000000;            /* Light mode text */
     padding: 15px;
     border-left: 4px solid #00c6ff;
     border-radius: 10px;
@@ -81,20 +89,20 @@ st.markdown("""
 }
 @media (prefers-color-scheme: dark) {
     .summary-expander {
-        background-color: #2c2c2c; /* Dark grey background */
-        color: #ffffff;            /* White text */
+        background-color: #2c2c2c; /* Dark mode background */
+        color: #ffffff;            /* Dark mode text */
     }
 }
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    padding-top: 40px;
+}
 </style>
-
-
-    .footer {
-        text-align: center;
-        color: #888;
-        font-size: 14px;
-        padding-top: 40px;
-    }
-    </style>
+""", unsafe_allow_html=True)
 """, unsafe_allow_html=True)
 
 # --- Session Summary Explorer UI ---
