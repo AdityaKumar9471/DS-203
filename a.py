@@ -132,11 +132,11 @@ def normalize(size, min_val=1, max_val=2.5):
 
 # --- Word Cloud Images Map ---
 wordcloud_images = {
-    "Overall Session": "/Users/adityakumar/PycharmProjects/NLP project/untitled folder/overall.png",
+    "Overall Session": "overall.png",
 }
 
 for i in range(11):
-    wordcloud_images[f"Cluster {i}"] = f"/Users/adityakumar/PycharmProjects/NLP project/untitled folder/{i}.png"
+    wordcloud_images[f"Cluster {i}"] = f"{i}.png"
 
 # --- Cluster Titles ---
 cluster_titles = {
