@@ -70,12 +70,19 @@ st.markdown("""
         border: 1px solid #00c6ff !important;
     }
     .summary-expander {
-    background-color: rgba(255, 255, 255, 0.05);  /* subtle light overlay */
-    color: #f1f1f1;  /* light text for dark backgrounds */
+    background-color: #ffffff10;  /* translucent white background for subtle highlight */
+    color: #111111;               /* dark text */
     padding: 15px;
     border-left: 4px solid #00c6ff;
     border-radius: 10px;
     margin-bottom: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .summary-expander {
+        background-color: #1e1e1e;
+        color: #f1f1f1;
+    }
 }
 
     .footer {
