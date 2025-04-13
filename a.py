@@ -102,7 +102,7 @@ st.markdown("""
     padding-top: 40px;
 }
 </style>
-""", unsafe_allow_html=True)
+
 """, unsafe_allow_html=True)
 
 # --- Session Summary Explorer UI ---
